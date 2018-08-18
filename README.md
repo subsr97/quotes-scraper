@@ -6,8 +6,8 @@ A Web Scraper that uses Python3 and Scrapy to scrape [Quotes To Scrape](http://q
 
 Includes 2 spiders: 
 
-* <i>quotes-spider</i> crawls and retrieves all quotes with the author and tags.
-* <i>author-spider</i> crawls and retrieves all author details including name, DOB and description.
+* [quotes-spider](./quotes_scraper/spiders/quotes_spider.py) crawls and retrieves all quotes with the author and tags.
+* [author-spider](./quotes_scraper/spiders/authors_spider.py) crawls and retrieves all author details including name, DOB and description.
 
 ## Requirements
 
