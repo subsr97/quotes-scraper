@@ -11,7 +11,7 @@ class QuotesSpider(scrapy.Spider):
     def parse(self, response):
         for quote in response.css("div.quote"):
             yield {
-                'text': quote.css("span.text::text").extract_first().replace("\u201c",""),
+                'text': quote.css("span.text::text").extract_first().replace("\u201c","").replace("\u201d",""),
                 'author': quote.css("small.author::text").extract_first(),
                 'tags': quote.css("div.tags a.tag::text").extract(),
             }
